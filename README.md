@@ -12,15 +12,22 @@
 
 ```
 .
+├── .github
+│   └── workflows
+│       └── ci.yml              // Github Actions configuration for CI
 ├── .gitignore
+├── README.md                   // This file :)
 ├── babel.config.js
 ├── package-lock.json
 ├── package.json
 ├── test
+│   ├── data
+│   │   ├── data.json           // Ranndom Data for the test
+│   │   └── dataWords.js        // Read data words from json file
 │   ├── pageobjects
-│   │   └── wikipediaPage.js
+│   │   └── wikipediaPage.js    // Page Object for Wikipedia
 │   └── specs
-│       └── wikipedia.js
+│       └── wikipedia.js        // Test for Wikipedia
 └── wdio.conf.js
 ```
 
