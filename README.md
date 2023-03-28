@@ -25,8 +25,10 @@
 │   │   ├── data.json           // Ranndom Data for the test
 │   │   └── dataWords.js        // Read data words from json file
 │   ├── pageobjects
+│   │   ├── clientdelayPage.js  // Page Object for Client Delay
 │   │   └── wikipediaPage.js    // Page Object for Wikipedia
 │   └── specs
+│       ├── clientdelay.js      // Test for Client Delay
 │       └── wikipedia.js        // Test for Wikipedia
 └── wdio.conf.js
 ```
