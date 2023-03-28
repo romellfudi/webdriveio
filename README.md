@@ -1,5 +1,9 @@
 # TAE Project
 
+<p align="center"> 
+<a href="https://github.com/romellfudi/webdriveio/actions"><img src="https://github.com/romellfudi/webdriveio/workflows/CI/badge.svg" alt="Continuous Integration"></a>
+</p>
+
 ### by Romell Freddy Dominguez
 
 [![](https://raw.githubusercontent.com/romellfudi/assets/master/favicon.ico)](https://portfolio.romellfudi.com/)
