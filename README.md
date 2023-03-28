@@ -1,8 +1,4 @@
-# IMDB KATA Project
-
-<p align="center"> 
-<a href="https://github.com/romellfudi/imdbkata/actions"><img src="https://github.com/romellfudi/imdbkata/workflows/Android%20CI/badge.svg" alt="Continuous Integration"></a>
-</p>
+# TAE Project
 
 ### by Romell Freddy Dominguez
 
