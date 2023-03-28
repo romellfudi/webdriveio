@@ -10,22 +10,22 @@ describe("Wikipedia page", () => {
   });
 
   it("should have the right title and says welcome", async () => {
-    wikipediaPage.hasTitle("Wikipedia, la enciclopedia libre");
-    wikipediaPage.hasWelcomeElement();
+    await wikipediaPage.hasTitle("Wikipedia, la enciclopedia libre");
+    await wikipediaPage.hasWelcomeElement();
   });
 
   it("search 'globant'", async () => {
-    wikipediaPage.searchFor("globant");
-    wikipediaPage.hasSearchResultGlobant();
+    await wikipediaPage.searchFor("globant");
+    await wikipediaPage.hasSearchResultGlobant();
   });
 
   it("changes language to English when clicking on 'English' link", async () => {
-    wikipediaPage.switchToEnglish();
+    await wikipediaPage.switchToEnglish();
     await expect(browser).toHaveUrlContaining("en.wikipedia.org");
   });
 
   it("takes you to page history when clicking on 'Historial' link", async () => {
-    wikipediaPage.goToHistory();
+    await wikipediaPage.goToHistory();
     await expect(browser).toHaveUrlContaining(
       "Wikipedia:Portada&action=history"
     );
