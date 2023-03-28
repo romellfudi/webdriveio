@@ -5,6 +5,7 @@ export default class WikipediaPage {
     this.welcomeElement = $("//a[text()='Bienvenidos']");
     this.searchInput = $("#searchInput");
     this.searchButton = $("#searchButton");
+    this.textTile = $("#mw-page-title-main");
     this.searchGlobantResult = $("//a[text()='Globant']");
     this.englishLink = $(
       "#p-lang li.interlanguage-link.interwiki-en.mw-list-item a"
@@ -43,9 +44,15 @@ export default class WikipediaPage {
     await this.searchButton.waitForDisplayed();
     await this.searchButton.click();
   }
+  // Checks that the search result for "Globant" is displayed, clickable and exists
+  async checkResultFor(searchTerm) {
+    await expect(browser).toHaveUrlContaining(searchTerm);
+    await expect(this.textTile).toBeDisplayed();
+    expectChai(await this.textTile.getText()).to.include(searchTerm)
+  }
 
   // Checks that the search result for "Globant" is displayed, clickable and exists
-  async hasSearchResult() {
+  async hasSearchResultGlobant() {
     await this.searchGlobantResult.waitForDisplayed();
     await expect(this.searchGlobantResult).toBeDisplayed();
     await expect(this.searchGlobantResult).toBeClickable();
